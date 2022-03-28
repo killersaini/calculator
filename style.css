@@ -10,8 +10,8 @@
 
 .calculator-container {
     display: inline-block;
-    background-color: gray;
-    padding: 30px;
+    background-color: black;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -19,19 +19,47 @@ table {
     margin: auto;
 }
 
+td {
+    padding: 10px;
+}
+
 .input {
     border-radius: 21px;
     width: 100%;
-    border: 2px solid green;
-    font-size: 20px;
+    font-size: 32px;
     padding: 5px 10px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    text-align: end;
+    padding: 25px;
+}
+
+input:focus,
+input:checked {
+    outline: none;
+    border: none;
 }
 
 button {
-    border-radius: 20px;
-    margin: 25px;
     font-weight: bold;
-    width: 61.5px;
-    height: 40px;
-    background-color: green;
+    width: 84px;
+    height: 57px;
+    background-color: rgba(128, 128, 128, 0.295);
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    color: white;
+}
+
+button:focus,
+button:checked {
+    outline: none;
+}
+
+.indicators {
+    background-color: rgb(226, 88, 63);
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: white;
 }
